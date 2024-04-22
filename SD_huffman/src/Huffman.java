@@ -96,7 +96,16 @@ public class Huffman {
 	// En paramètre, en plus de la chaine à décoder, est spécifié la racine de l'arbre de 
 	// Huffman 
 	public static String expand(Node root, String t) {
-		
+		String chaine = "";
+		Node currentNode = root;
+		Map<Character, Integer> tableau = computeFreq(t);
+		buildTree(tableau);
+
+		for (char c : t.toCharArray()) {
+
+		}
+
+
 		return null;
 	}
 
